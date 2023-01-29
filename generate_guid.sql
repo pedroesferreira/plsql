@@ -1,3 +1,10 @@
+/**
+*	function that receives no parameters
+*	returns an UUID
+*	
+*	uses the available Oracle SYS_GUID function and transforms it
+*	useful for generating accepted UUID values
+**/
 create or replace function generate_guid
 return varchar2
 is

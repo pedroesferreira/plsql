@@ -1,3 +1,9 @@
+/**
+*	procedure that receives a filename and BLOB data
+*	writes the content in an ALL_DIRECTORIES path
+*	
+*	useful for saving content in a DB directory
+**/
 create or replace procedure write_file (pv_filename in varchar2,
 										pb_blob in blob) 
 is

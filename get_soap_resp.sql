@@ -1,3 +1,9 @@
+/**
+*	function that receives an HTTP endpoint
+*	returns the XML response of the HTTP POST
+*
+*	sends the XML request to the given endpoint and returns the response
+**/
 create or replace function get_soap_resp (pv_url in varchar2) 
 return xmltype 
 is

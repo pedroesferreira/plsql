@@ -1,3 +1,11 @@
+/**
+*	Table and procedure used for logging purposes
+*	
+*	Procedure can be used as "dbg_logger('99', 'description', 'value');"
+*	and then accessed as "select * from dbg_log where code = 99 order by ts desc;"
+*
+**/
+
 create table dbg_log (ts        timestamp(6),  
 					  code      varchar2(100), 
                       text      varchar2(200), 

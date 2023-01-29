@@ -1,3 +1,10 @@
+/**
+*	procedure that receives a table ID
+*	when called by URL, presents the Base64 CLOB content on the screen
+*	
+*	uses the "decode_base64" function
+*	useful for showing saved PDF files on screen
+**/
 create or replace procedure show_pdf (pv_id in varchar2)
 is
     lb_lob 		blob;

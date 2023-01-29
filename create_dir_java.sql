@@ -1,3 +1,11 @@
+/**
+*	function that receives a path and username
+*	creates a new directory in the given path named after the given username
+*	returns the result of the operation
+*	
+*	uses a DB loaded Java class
+*	useful for dynamically creating new directories/folders
+**/
 /*
 //load this java class into database
 

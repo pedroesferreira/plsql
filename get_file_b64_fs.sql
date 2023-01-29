@@ -1,3 +1,10 @@
+/**
+*	function that receives a table (that holds BLOB content) ID and a filename
+*	returns the file with the same filename from an existing path/folder in the ALL_DIRECTORIES table
+*
+*	the returned file is encoded in a Base64 CLOB without line breaks
+*	useful for sending a file in a directory through an HTTP POST
+**/
 create or replace function get_file_b64_fs (pv_id in varchar2,
                                             pv_filename in varchar2)
 return clob

@@ -1,3 +1,7 @@
+/**
+*	function that receives a BLOB and returns a Base64 encoded CLOB
+*	useful for encoding files and sending them through an HTTP POST
+**/
 create or replace procedure encode_base64 (pb_blob in blob, 
 										   pc_clob in out nocopy clob)
 is

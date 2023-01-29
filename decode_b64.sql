@@ -1,3 +1,7 @@
+/**
+*	function that receives a Base64 encoded CLOB and returns a decoded BLOB
+*	useful for PDF files or encoded data returned from a webservice 
+**/
 create or replace function decode_base64 (pc_clob in clob) 
 return blob 
 is

@@ -1,3 +1,7 @@
+/**
+*	function that receives 2 dates and returns the difference in years
+*	useful for calculating someones age through their DOB
+**/
 create or replace function get_age_years (pd_dt_nasc in date, 
 										  pd_dt_compare in date default sysdate) 
 return integer 
